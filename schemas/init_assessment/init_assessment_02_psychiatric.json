@@ -1,0 +1,86 @@
+{
+    "module_id": "init_assessment_02_psychiatric",
+    "doc_type": "Initial Clinical Mental Health Assessment and Treatment",
+    "sections": [
+        {
+            "id": "hospitalizations",
+            "title": "Hospilizations Total Number:",
+            "type": "narrative",
+            "instruction": "Summarize the client's amount of hospital visits.",
+            "required": true,
+            "length": "one_sentence"
+        },
+        {
+            "id": "admitted",
+            "title": "Where and when admitted?",
+            "type": "narrative",
+            "instruction": "Summarize the details of the client's hospital visits.",
+            "required": true,
+            "length": "short_paragraph"
+        },
+        {
+            "id": "outpatient_treatment",
+            "title": "Outpatient Treatment",
+            "type": "narrative",
+            "instruction": "Summarize the client's outpatient treatment",
+            "required": true,
+            "length": "short_paragraph"
+        },
+        {
+           "id": "current_medical_conditions",
+            "title": "Current Medical Conditions: ",
+            "type": "narrative",
+            "instruction": "Summarize the client's current medical conditions",
+            "required": true,
+            "length": "short_paragraph" 
+        },
+        {
+            "id": "current_medicaitons",
+            "title": "Current Medications",
+            "type": "narrative",
+            "instruction": "Summarize the client's current medications",
+            "required": true,
+            "length": "short_paragraph"
+        },
+        {
+            "id": "family_of_origin",
+            "title": "Family of Origin:",
+            "type": "narrative",
+            "instruction": "Summarize the client's family of origin",
+            "required": true,
+            "length": "short_paragraph"
+        },
+        {
+            "id": "family_history_of_illness_or_substance",
+            "title": "Family History of Mental Illness and/or Substance Abuse: ",
+            "type": "narrative",
+            "instruction": "Summarize the client's family history of mental illness and/or substance abuse.",
+            "required": true,
+            "length": "medium_paragraph"
+        },
+        {
+            "id": "school_history",
+            "title": "School History",
+            "type": "narrative",
+            "instruction": "Summarize the client's school history",
+            "required": false,
+            "length": "short_paragraph"
+        },
+        {
+            "id": "vocational_history",
+            "title": "Vocational History",
+            "type": "narrative",
+            "instruction": "Summarize the client's vocational history",
+            "required": false,
+            "length": "short_paragraph"
+        },
+        {
+            "id": "legal_history",
+            "title": "Legal History",
+            "type": "narrative",
+            "instruction": "Summarize the client's legal history",
+            "required": false,
+            "length": "short_paragraph"
+        }
+    ]
+}
