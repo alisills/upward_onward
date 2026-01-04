@@ -1,0 +1,81 @@
+{
+  "policy_id": "policy_vocab",
+  "version": "1.0",
+  "description": "Controlled vocabulary and rendering constraints for CompNarra clinical documentation.",
+  "enforcement": {
+    "strict": true,
+    "allow_free_text": false
+  },
+  "length_enum": {
+    "one_sentence": {
+      "definition": "Exactly one complete sentence.",
+      "max_sentences": 1
+    },
+    "two_sentences": {
+      "definition": "Exactly two complete sentences.",
+      "max_sentences": 2
+    },
+    "short_paragraph": {
+      "definition": "Three to four concise sentences.",
+      "min_sentences": 3,
+      "max_sentences": 4
+    },
+    "medium_paragraph": {
+      "definition": "Five to six sentences with clinical detail.",
+      "min_sentences": 5,
+      "max_sentences": 6
+    },
+    "long_paragraph": {
+      "definition": "Seven to nine sentences. Used for core clinical narratives.",
+      "min_sentences": 7,
+      "max_sentences": 9
+    },
+    "bulleted_3_4": {
+      "definition": "Three to four bullet points using objective language.",
+      "min_items": 3,
+      "max_items": 4
+    },
+    "bulleted_5_7": {
+      "definition": "Five to seven bullet points using objective language.",
+      "min_items": 5,
+      "max_items": 7
+    },
+    "table_md": {
+      "definition": "Markdown-rendered table. All cells must be populated per override rules."
+    },
+    "table_json": {
+      "definition": "Structured table output used internally prior to markdown rendering."
+    }
+  },
+  "language_rules": {
+    "voice": "third_person",
+    "tense": "past_or_present_clinical",
+    "subject": "Client",
+    "prohibited_terms": [
+      "appears to be",
+      "seems",
+      "likely",
+      "probably",
+      "I think",
+      "clinician believes"
+    ],
+    "required_style": [
+      "objective",
+      "person_first",
+      "stigma_free",
+      "payer_compliant"
+    ]
+  },
+  "normalization_rules": {
+    "synonym_mapping": {
+      "not sleeping well": "sleep disturbance",
+      "poor sleep": "sleep disturbance",
+      "feels anxious": "reports anxiety symptoms",
+      "angry outbursts": "anger dysregulation"
+    }
+  },
+  "null_handling": {
+    "narrative_fallback": "Information not available at time of assessment.",
+    "table_fallback": "Client did not report."
+  }
+}
