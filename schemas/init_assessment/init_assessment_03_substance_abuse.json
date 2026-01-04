@@ -1,0 +1,62 @@
+{
+    "module_id": "init_assessment_03_substance_abuse",
+    "doc_type": "Initial Clinical Mental Health Assessment and Treatment",
+    "sections": [
+        {
+            "id": "substance_abuse_treatment_history",
+            "title": "Substance Abuse Treatment History:",
+            "type": "narrative",
+            "instruction": "Summarize the client's substance abuse treatment history",
+            "required": false,
+            "length": "short_paragraph"
+        },
+        {
+            "id": "thought_content_judgement",
+            "title": "Thought Content: Judgment",
+            "type": "narrative",
+            "instruction": "Summarize the client's thought content judgement",
+            "required": true,
+            "length": "short_paragraph"
+        },
+        {
+            "id": "thought_content_insight",
+            "title": "Thought Content: Insight",
+            "type": "narrative",
+            "instruction": "Summarize the client's thought content insight",
+            "required": true,
+            "length": "short_paragraph"
+        },
+        {
+            "id": "si_ideation",
+            "title": "Current Suicidal Ideation:",
+            "type": "narrative",
+            "instruction": "Summarize the client's suicidal ideation",
+            "required": false,
+            "length": "short_paragraph"
+        },
+        {
+            "id": "hi_ideation",
+            "title": "Current Homicidal Ideation:",
+            "type": "narrative",
+            "instruction": "Summarize the client's homicidal ideation",
+            "required": false,
+            "length": "short_paragraph"
+        },
+        {
+            "id": "other_conditions",
+            "title": "Other Conditions That May Be a Focus of Clinical Attention ",
+            "type": "narrative",
+            "instruction": "Summarize other conditions that may be of focus for the client",
+            "required": true,
+            "length": "medium_paragraph"
+        },
+        {
+            "id": "strength",
+            "title": "Client’s strengths:",
+            "type": "narrative",
+            "instruction": "Summarize other conditions that may be of focus for the client",
+            "required": true,
+            "length": "medium_paragraph"
+        }
+    ]
+}
