@@ -54,7 +54,7 @@
             "id": "strength",
             "title": "Client’s strengths:",
             "type": "narrative",
-            "instruction": "Summarize other conditions that may be of focus for the client",
+            "instruction": "Summarize the client's strengths",
             "required": true,
             "length": "medium_paragraph"
         }
