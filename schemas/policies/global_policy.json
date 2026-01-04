@@ -1,0 +1,17 @@
+{
+  "policy_id": "policy_global",
+  "version": "1.0.0",
+  "instructions": {
+    "source_of_truth": "Use only facts from the uploaded information. Do not guess or invent details.",
+    "fallback_sentence": "For missing information mention that the client did not report the information",
+    "style": "Objective, concise, payer-compliant. Use full sentences. Avoid jargon and speculation.",
+    "compliance_focus": "Include frequency, intensity, duration, and functional impairment (FID/Impairment) when relevant. Explain why a lower level of care is insufficient when risk is present.",
+    "dates_times": "Use ISO dates when exact dates are present; otherwise keep narrative without inventing dates.",
+    "null_policy": "If a fact is absent, set structured fields to null and use fallback_sentence for narratives.",
+    "output_preferences": {
+      "format": "markdown",
+      "tables": "markdown_table",
+      "numbers_in_text": "spell_small_integers_1_to_9"
+    }
+  }
+}
