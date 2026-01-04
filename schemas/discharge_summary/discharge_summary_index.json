@@ -1,0 +1,21 @@
+{
+  "doc_type": "Discharge Summary Note",
+  "policy_refs": {
+    "global": "/schemas/policies/policy_global.json",
+    "vocab": "/schemas/policies/policy_vocab.json"
+  },
+  "modules_in_order": ["/schemas/discharge/discharge_summary.json"],
+  "render_order": [
+    "initial_diagnosis",
+    "discharge_diagnosis",
+    "services_and_termination_status",
+    "overall_status_at_termination",
+    "reasons_for_termination",
+    "presenting_problem_and_assessment",
+    "clinical_course",
+    "medical_psychiatric_status",
+    "post_termination_plan",
+    "client_satisfaction_statement"
+  ],
+  "rules": { "do_not_render_unlisted_sections": true }
+}

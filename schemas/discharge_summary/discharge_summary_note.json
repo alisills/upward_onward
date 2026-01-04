@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/schemas/discharge/discharge_summary.json",
+  "title": "Discharge Summary Note",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "initial_diagnosis": { "type": ["string", "null"], "minLength": 1 },
+    "discharge_diagnosis": { "type": ["string", "null"], "minLength": 1 },
+    "services_and_termination_status": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "opening_date": { "type": ["string", "null"], "format": "date" },
+        "termination_date": { "type": ["string", "null"], "format": "date" },
+        "number_of_sessions": { "type": ["integer", "null"], "minimum": 0 },
+        "services_used": {
+          "type": ["array", "null"],
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "services_used_other_detail": { "type": ["string", "null"] }
+      },
+      "required": ["opening_date", "termination_date", "number_of_sessions", "services_used"]
+    },
+    "overall_status_at_termination": { "type": ["string", "null"] },
+    "reasons_for_termination": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "selected": { "type": ["array", "null"], "items": { "type": "string" }, "uniqueItems": true },
+        "other_detail": { "type": ["string", "null"] }
+      },
+      "required": ["selected", "other_detail"]
+    },
+    "presenting_problem_and_assessment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "subjective_evaluation": { "type": ["string", "null"] }
+      },
+      "required": ["subjective_evaluation"]
+    },
+    "clinical_course": { "type": ["string", "null"] },
+    "medical_psychiatric_status": { "type": ["string", "null"] },
+    "post_termination_plan": { "type": ["string", "null"] },
+    "client_satisfaction_statement": { "type": ["string", "null"] }
+  },
+  "required": [
+    "initial_diagnosis",
+    "discharge_diagnosis",
+    "services_and_termination_status",
+    "overall_status_at_termination",
+    "reasons_for_termination",
+    "presenting_problem_and_assessment",
+    "clinical_course",
+    "medical_psychiatric_status",
+    "post_termination_plan",
+    "client_satisfaction_statement"
+  ]
+}
