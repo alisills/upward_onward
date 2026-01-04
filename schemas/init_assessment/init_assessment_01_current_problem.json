@@ -1,0 +1,78 @@
+{
+    "module_id": "init_assessment_01_current_problem",
+    "doc_type": "Initial Clinical Mental Health Assessment and Treatment",
+    "sections": [
+        {
+            "id": "current_problem",
+            "title": "Current Problem:",
+            "type": "narrative",
+            "instruction": "Summarize the client’s current problem based on the information provided.",
+            "required": true,
+            "length": "long_paragraph"
+        },
+        {
+            "id": "occupational_functioning",
+            "title": "Occupational Functioning",
+            "type": "narrative",
+            "instruction": "Summarize the client's occupational functioning based on the information provided.",
+            "required": true,
+            "length": "short_paragraph"
+        },
+        {
+            "id": "academic_functioning",
+            "title": "Academic Functioning",
+            "type": "narrative",
+            "instruction": "Summarize the client's academic functioning",
+            "required": false,
+            "length": "short_paragraph"
+        },
+        {
+            "id": "family_functioning",
+            "title": "Family Functioning",
+            "type": "narrative",
+            "instruction": "Summarize the client's family functioning",
+            "required":true,
+            "length": "short_paragraph"
+        },
+        {
+            "id": "marital_functioning",
+            "title": "Marital Functioning",
+            "type": "narrative",
+            "instruction": "Summarize the client's marital functioning",
+            "required":true,
+            "length": "short_paragraph"
+        },
+        {
+            "id": "social_functioning",
+            "title": "Social Functioning",
+            "type": "narrative",
+            "instruction": "Summarize the client's social functioning",
+            "required":true,
+            "length": "short_paragraph"
+        },
+        {
+            "id": "history_problem",
+            "title": "History of Problem",
+            "type": "narrative",
+            "instruction": "Summarize the client's history of problem",
+            "required":true,
+            "length": "short_paragraph"
+        },
+        {
+            "id": "current_mental_health_treatment",
+            "title": "Current Outpatient Mental Health Treatment:",
+            "type": "narrative",
+            "instruction": "Summarize the client's current mental health treatment",
+            "required":true,
+            "length": "short_paragraph"
+        },
+        {
+            "id": "current_psychotropic_medications",
+            "title": "Current Psychotropic Medications: ",
+            "type": "narrative",
+            "instruction": "Summarize the client's current psychotropic medications",
+            "required":true,
+            "length": "short_paragraph"
+        }
+    ]
+}

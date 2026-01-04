@@ -1,0 +1,33 @@
+{
+    "doc_type": "Initial Clinical Mental Health Assessment and Treatment",
+    "policy_refs": {
+    "global": "/schemas/policies/global_policy.json",
+    "vocab": "/schemas/policies/vocab_policy.json"
+  },
+  "modules_in_order": [
+    "/schemas/init_assessment/init_assessment_01_current_problem.json",
+    "/schemas/init_assessment/init_assessment_02_psychiatric.json",
+    "/schemas/init_assessment/cepp_03_crisis_tables.json"
+  ],
+  "render_order": [
+    "developmental_disability",
+    "behavioral_health",
+    "medical_dental",
+    "substance_use",
+    "communication_modality",
+    "language_preference",
+    "cultural_heritage",
+    "legal_history",
+    "educational_information",
+    "support_circle",
+    "baseline",
+    "present_supports",
+    "specific_stressors",
+    "necessitated_plan_for_crisis",
+    "early_warning_table",
+    "crisis_behavior_table"
+  ],
+  "rules": {
+    "do_not_render_unlisted_sections": true
+  }
+}
